@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>API : Processing Image App</title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+ 
+</head>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            
+			<div class="topnav">
+			  <a href="">Home</a>
+			  <a href="">UPload</a>
+			  <a href="">FLIP</a>
+			  <a href="">RESIZE</a>
+			  <a href="">ROTATE</a>
+			  <a href="">THUMBNAIL</a>
+			  <a href="">BLACK&WHITE</a>
+			  <a href="">BLEND</a>
+			</div>
+            
+        </div>
+ 
+        <div class="transfer">
+           <h3 class="text-muted">Processing Image</h3>
+	       <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <input id="file-picker" type="file" name="file" accept="image/*" class="hidden" onchange="this.form.submit()">
+            <label for="file-picker" class="btn btn-warning">Select image file</label>
+               <p align = 'center'><h4>Accept: .png, .jpg, .bmp. gif</h4>
+               
+		 </form>
+        </div>  
+ 
+        <div class="row processing"  align = 'left' width= '700'>
+		<h4 align = 'left'>The application that we're creating is a simple image processor. <br>
+		<p>The end user provides an image in some format, API allows the user to perform combinations of the operations.
+        </p>
+		</h4>
+           
+ 
+            
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; Seattle University CPSC5200 | API Processing Image</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
+

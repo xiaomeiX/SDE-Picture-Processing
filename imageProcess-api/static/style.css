@@ -1,0 +1,205 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header,
+.processing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+header h1.logo:hover {
+  color: #aaaa;
+  text-decoration: none;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eae4f4;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  letter-spacing: -2px;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #FFFF;
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    /*max-width: 730px;*/
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.transfer {
+  text-align: center;
+  border-bottom: 1px solid red; /*#fef1fff;*/
+}
+.transfer .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+.processing {
+  margin: 40px 0;
+}
+.processing p + h4 {
+  margin-top: 28px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+	* {box-sizing: border-box;}
+
+	.bg-img {
+	  /* The image used */
+	  background-image: {{ url_for('static', filename = '/images/bk.jpg')}};
+
+	  min-height: 380px;
+
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  
+	  /* Needed to position the navbar */
+	  position: relative;
+	}
+
+	/* Position the navbar container inside the image */
+	.container {
+	  position: absolute;
+	  margin: 20px;
+	  width: 80%;
+	}
+
+	/* The navbar */
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	/* Navbar links */
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	.container {
+		  position: relative;
+		  font-family: Arial;
+		}
+
+		.text-block {
+		  position: absolute;
+		  bottom: 80px;
+		  right: 220px;
+		  background-color: green;
+		  color: white;
+		  padding-left: 20px;
+		  padding-right: 20px;
+		}
+		.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f4efff;
+  cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+  background-color: #faaeef;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+  .header,
+  .processing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
+  .transfer {  
+    border-bottom: 0;
+  }
+}
+.btn-lg,
+.nav-pills > li > a,
+.container .transfer {
+    border: 0px;
+    border-radius: 0px;
+}
+
+#upload-button{
+	color: red;
+}
+#file-picker {
+    margin-top: 30px;
+	color: blue;
+}
+
+div#image-container {
+    max-width: 500px;
+}
+
+div#image-container > img {
+    max-width: 100%;
+}
+
+#form-resize > input[type=number] {
+    width: 50px;
+} 
+
+#form-blend > input[type=number] {
+    width: 77px;
+} 
+
+.hidden {
+	display: none !important;
+}
+
+.table > tbody > tr > td {
+    
+    
+    
+     vertical-align: middle;
+}
+
+
