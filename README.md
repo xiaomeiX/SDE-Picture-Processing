@@ -1,4 +1,4 @@
-# SDE-Picture-Processing
+# SDE-Image-Processing
 Introduction:
 Image Processor application is a cloud-hosted, distributed system. It allows the user to apply transformations on top of image in order. 
 Transformations include grayscale, flip horizontally, flip vertically, resize, thumbnail, rotate -/+ n degrees, Black and white, blend image. 
